@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<title>AI Презентация 10 Слайд</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    overflow:hidden;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* SLIDER */
+.slider{
+    display:flex;
+    width:1000%;
+    height:100vh;
+    transition:0.8s ease-in-out;
+}
+
+.slide{
+    width:100%;
+    height:100vh;
+    flex-shrink:0;
+    padding:100px 50px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.slide h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.slide p{
+    max-width:800px;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.slide img{
+    width:350px;
+    border-radius:15px;
+    background:white;
+    padding:10px;
+}
+
+/* Background colors */
+.slide:nth-child(1){background:#1a1a2e;}
+.slide:nth-child(2){background:#16213e;}
+.slide:nth-child(3){background:#0f3460;}
+.slide:nth-child(4){background:#533483;}
+.slide:nth-child(5){background:#2d033b;}
+.slide:nth-child(6){background:#003049;}
+.slide:nth-child(7){background:#370617;}
+.slide:nth-child(8){background:#283618;}
+.slide:nth-child(9){background:#3a0ca3;}
+.slide:nth-child(10){background:#14213d;}
+
+.buttons{
+    position:absolute;
+    width:100%;
+    top:50%;
+    display:flex;
+    justify-content:space-between;
+    transform:translateY(-50%);
+}
+
+button{
+    background:rgba(255,255,255,0.3);
+    border:none;
+    color:white;
+    font-size:30px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:white;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#" onclick="goToSlide(0)">AI</a>
+<a href="#" onclick="goToSlide(1)">Нейросеть</a>
+<a href="#" onclick="goToSlide(2)">Machine Learning</a>
+<a href="#" onclick="goToSlide(3)">Deep Learning</a>
+<a href="#" onclick="goToSlide(4)">Google</a>
+<a href="#" onclick="goToSlide(5)">Microsoft</a>
+<a href="#" onclick="goToSlide(6)">ChatGPT</a>
+<a href="#" onclick="goToSlide(7)">Робототехника</a>
+<a href="#" onclick="goToSlide(8)">Коопсуздук</a>
+<a href="#" onclick="goToSlide(9)">Келечек</a>
+</nav>
+
+<div class="slider" id="slider">
+
+<div class="slide">
+<h1>Жасалма Интеллект</h1>
+<p>AI — компьютердин адам сыяктуу ойлонуу технологиясы.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg">
+</div>
+
+<div class="slide">
+<h1>Нейросеттер</h1>
+<p>Мээнин иштешине окшош алгоритм.</p>
+<img src="Artificial_Intelligence_&_AI_&_Machine_Learning_-_30212411048.jpg">
+</div>
+
+<div class="slide">
+<h1>Machine Learning</h1>
+<p>Компьютер маалымат аркылуу үйрөнөт.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Machine_learning.png">
+</div>
+
+<div class="slide">
+<h1>Deep Learning</h1>
+<p>Терең нейрондук тармактар.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Deep_learning.jpg">
+</div>
+
+<div class="slide">
+<h1>Google AI</h1>
+<p>Google Search жана Gemini AI.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+</div>
+
+<div class="slide">
+<h1>Microsoft AI</h1>
+<p>Azure AI жана Bing AI.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
+</div>
+
+<div class="slide">
+<h1>ChatGPT</h1>
+<p>Текст генерациялоочу AI модель.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg">
+</div>
+
+<div class="slide">
+<h1>Робототехника</h1>
+<p>AI менен башкарылган роботтор.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Humanoid_robot_and_AI.jpg">
+</div>
+
+<div class="slide">
+<h1>AI Коопсуздугу</h1>
+<p>Этика жана маалымат коргоо маанилүү.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Cyber_security_concept.jpg">
+</div>
+
+<div class="slide">
+<h1>AIнын Келечеги</h1>
+<p>Автоматташтыруу жана акылдуу системалар.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Artificial_intelligence_robot.jpg">
+</div>
+
+</div>
+
+<div class="buttons">
+<button onclick="prevSlide()">❮</button>
+<button onclick="nextSlide()">❯</button>
+</div>
+
+<script>
+let index = 0;
+const slider = document.getElementById("slider");
+let autoSlide;
+
+function updateSlider(){
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide(){
+    index++;
+    if(index > 9) index = 0;
+    updateSlider();
+    resetAuto();
+}
+
+function prevSlide(){
+    index--;
+    if(index < 0) index = 9;
+    updateSlider();
+    resetAuto();
+}
+
+function goToSlide(i){
+    index = i;
+    updateSlider();
+    resetAuto();
+}
+
+function startAuto(){
+    autoSlide = setInterval(() => {
+        index++;
+        if(index > 9) index = 0;
+        updateSlider();
+    }, 15000);
+}
+
+function resetAuto(){
+    clearInterval(autoSlide);
+    startAuto();
+}
+
+document.addEventListener("keydown", function(e){
+    if(e.key === "ArrowRight") nextSlide();
+    if(e.key === "ArrowLeft") prevSlide();
+});
+
+startAuto();
+</script>
+
+</body>
+</html>
